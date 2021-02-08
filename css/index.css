@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Slab:wght@600&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, p, div, a {
+    color: white;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+.cap {
+    border: 1px solid;
+    display: flex;
+    justify-content: space-around;
+}
+.logo-menu {
+    display: flex;
+    justify-content: space-around;
+}
+ol {
+    display: flex;
+    justify-content: space-around;  
+}
+.info1, .info2, .info3 {
+    display: flex;
+    justify-content: space-around;
+    justify-items: auto;
+}
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: xxx-large;
+}
+h2 {
+     display: flex;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+}
+.products {
+    display: flex;
+    justify-content: space-around;
+}
+.products img {
+    display: block;
+   
+}
+footer nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.made-by {
+    display: flex;
+    justify-content: space-around;
+}
