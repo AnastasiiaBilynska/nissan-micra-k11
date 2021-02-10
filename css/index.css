@@ -1,33 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Slab:wght@600&display=swap');
 
-body {
+:root {
+    --main-color: white;
+    --accent-color: rgba(128, 128, 128, 0.452);
     background-color: black;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration-line: none;
 }
-h1, h2, h3, p, div, a {
-    color: white;
+body {
+    margin: auto;
+    max-width: 980;
 }
-ul {
-    padding: 0;
-    list-style-type: none;
+h1, h2, h3, div, a {
+    color: var(--main-color);
+}
+p, a {
+color: var(--accent-color);
 }
 .cap {
     border: 1px solid;
     display: flex;
     justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.63);
 }
 .logo-menu {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
     display: flex;
     justify-content: space-around;
-}
+   }
+   
 ol {
     display: flex;
     justify-content: space-around;  
 }
+header {
+    background-image: url(../img/big-main.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    }
+
+@media (max-width: 595px) {
+    .cap {
+    display: flex;
+    align-items: baseline;
+    }
+}
+main {
+    background-color: rgba(34, 33, 33, 0.349);
+}
 .info1, .info2, .info3 {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    justify-items: auto;
+    border: 2px;
+    border-color: rgba(0, 0, 0, 0.384);
+    border-radius: 10px;
+    background-color:  rgba(0, 0, 0, 0.068); 
 }
 h1 {
     font-family: 'Roboto Slab', serif;
@@ -46,11 +82,11 @@ h2 {
     display: block;
    
 }
-footer nav {
+footer ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     flex-direction: row;
-}
+    }
 .made-by {
     display: flex;
     justify-content: space-around;
