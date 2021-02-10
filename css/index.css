@@ -136,12 +136,22 @@ footer {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 750px;   
+    background-color: rgba(39, 39, 39, 0.178);
+    height: 600px;   
     }
-footer .form, .contacts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px;
+    .form {
+        display: block;
+        padding: 50px;
+        background-color: rgba(49, 48, 48, 0.507);
+        border-radius: 50px;
+    }
+    .contacts {
+        display: block;
+    }
+.form-contacts {
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
     }
 footer ul {
     display: flex;
