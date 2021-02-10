@@ -2,7 +2,7 @@
 
 :root {
     --main-color: white;
-    --accent-color: rgba(128, 128, 128, 0.452);
+    --accent-color: rgba(185, 180, 180, 0.904);
     background-color: black;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
@@ -51,7 +51,7 @@ header {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 800px;
+    height: 1000px;
     }
 
 @media (max-width: 595px) {
@@ -67,7 +67,9 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 400px;
+    flex-wrap: wrap;
+    height: 450px;
+    padding: 20px;
   }
     .info1, .info2, .info3 {
     display: flex;
@@ -82,12 +84,12 @@ main {
 }  
 .info-box img{
     border-radius: 10px;
-
     }
 h1 {
     font-family: 'Roboto Slab', serif;
     font-size: 80px;
     height: 350px;
+    padding: 40px;
 }
 h2 {
      display: flex;
@@ -114,24 +116,32 @@ h2 {
     display: grid;
     grid-template-rows: c;
     }
-    .delivery img {
+.delivery img {
     display: block;
     width: 80%;  
     border-radius: 20px;
     padding: 20px;
     } 
-     .block-gelivery {
+.block-gelivery {
     display: flex;
     justify-content: center;
     } 
-    .delivery {
+.delivery {
     display: grid;
     grid-template-columns: 50% 50%;
+    justify-content: center;
     }
-    footer .form, footer .contacts {
-        display: grid;
-        flex-direction: row;
-        justify-content: space-around;
+footer {
+    background-image: url(../img/big-main.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 750px;   
+    }
+footer .form, .contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
     }
 footer ul {
     display: flex;
