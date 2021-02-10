@@ -7,16 +7,20 @@
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
     text-decoration-line: none;
-}
+    }
 body {
     margin: auto;
     max-width: 980;
+    font-size: 16px;
+    padding: 0;
 }
 h1, h2, h3, div, a {
     color: var(--main-color);
 }
 p, a {
 color: var(--accent-color);
+text-decoration: none;
+font-size: 25px;
 }
 .cap {
     border: 1px solid;
@@ -38,13 +42,16 @@ ul {
    
 ol {
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-around; 
+    font-size: larger;
+font-style: initial;     
 }
 header {
     background-image: url(../img/big-main.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    height: 800px;
     }
 
 @media (max-width: 595px) {
@@ -56,38 +63,82 @@ header {
 main {
     background-color: rgba(34, 33, 33, 0.349);
 }
-.info1, .info2, .info3 {
+    .info-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 400px;
+  }
+    .info1, .info2, .info3 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    border: 2px;
-    border-color: rgba(0, 0, 0, 0.384);
+    justify-content: center;
+    flex: 1; 
+    border: 2px; 
+    border-color: rgba(0, 0, 0, 0.068); 
+    background-color:  rgba(0, 0, 0, 0.068);
+    border-radius: 10px; 
+    margin: 50px;
+}  
+.info-box img{
     border-radius: 10px;
-    background-color:  rgba(0, 0, 0, 0.068); 
-}
+
+    }
 h1 {
     font-family: 'Roboto Slab', serif;
-    font-size: xxx-large;
+    font-size: 80px;
+    height: 350px;
 }
 h2 {
      display: flex;
     justify-content: center;
     font-family: 'Roboto Slab', serif;
+    font-size: 40px;
 }
 .products {
     display: flex;
     justify-content: space-around;
-}
+    border-radius: 10px;
+    margin: 50px;
+    }
 .products img {
     display: block;
    
 }
+.contact-us {
+    background-image: url(../img/right.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    display: grid;
+    grid-template-rows: c;
+    }
+    .delivery img {
+    display: block;
+    width: 80%;  
+    border-radius: 20px;
+    padding: 20px;
+    } 
+     .block-gelivery {
+    display: flex;
+    justify-content: center;
+    } 
+    .delivery {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    }
+    footer .form, footer .contacts {
+        display: grid;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 footer ul {
     display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
+    justify-content: space-evenly;
     }
 .made-by {
     display: flex;
+    flex: 1;
     justify-content: space-around;
 }
