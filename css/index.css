@@ -22,11 +22,29 @@ color: var(--accent-color);
 text-decoration: none;
 font-size: 25px;
 }
+.decoration1 {
+    background: rgba(255, 255, 255, 0.14);
+    height: 3px;
+    width: 54%;
+}
+.main-heder {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+   }
 .cap {
-    border: 1px solid;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.63);
+    background-color: rgba(31, 31, 32, 0.79);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
 }
 .logo-menu {
     display: grid;
@@ -44,10 +62,11 @@ ol {
     display: flex;
     justify-content: space-around; 
     font-size: larger;
-font-style: initial;     
+    font-style: initial;     
 }
 header {
     background-image: url(../img/big-main.jpg);
+    filter: brightness(50%);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -95,18 +114,27 @@ h2 {
      display: flex;
     justify-content: center;
     font-family: 'Roboto Slab', serif;
-    font-size: 40px;
+    font-size: 22px;
 }
-.products {
+.d-block w-100 {
+    width: 10%;
+}
+.products img {
+    display: block;
+    max-width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   /*.products {
     display: flex;
     justify-content: space-around;
     border-radius: 10px;
     margin: 50px;
     }
-.products img {
-    display: block;
-   
-}
+    */
+
 .contact-us {
     background-image: url(../img/right.jpg);
     background-attachment: fixed;
@@ -118,14 +146,11 @@ h2 {
     }
 .delivery img {
     display: block;
-    width: 80%;  
+    width: 70%;  
     border-radius: 20px;
     padding: 20px;
     } 
-.block-gelivery {
-    display: flex;
-    justify-content: center;
-    } 
+
 .delivery {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -133,10 +158,10 @@ h2 {
     }
 footer {
     background-image: url(../img/big-main.jpg);
+    filter: brightness(50%);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-color: rgba(39, 39, 39, 0.178);
     height: 600px;   
     }
     .form {
