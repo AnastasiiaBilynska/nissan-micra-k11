@@ -20,9 +20,9 @@ document.querySelector(".header_burger").addEventListener("click", () => (cap, h
 
 
 
-
+/*
 class Carousel {
-  constructor("products") {
+  constructor(product) {
     this.product = product;
     this.currInd = 0;
     this.showCurrentProduct();
@@ -49,3 +49,4 @@ class Carousel {
 new Carousel([document.querySelectorAll("li .carousel"]);
 
 
+*/
