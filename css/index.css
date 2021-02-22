@@ -101,7 +101,7 @@ h1 {
     display: none;
 }
 
-header nav {
+.header_nav {
     display: none;
 }
 
@@ -110,6 +110,7 @@ header nav {
     position: relative;
     width: 30px;
     height: 50px;
+    cursor: pointer;
 }
 
 .header_burger span {
@@ -138,6 +139,9 @@ header nav {
 .header_burger:after {
     bottom: 10px;
 }
+.js_menu {
+    display: none;
+}
 ol {
     display: flex;
     flex-direction: column;
@@ -164,6 +168,7 @@ header {
 
 main {
     background-color: rgb(34, 33, 33);
+    height: 2800px;
 }
 
 #about {
@@ -182,7 +187,7 @@ main {
     /* display: grid;
     grid-template-columns: max-content;
     justify-content: center;*/
-    height: 650px;
+    height: 1200px;
     padding: 20px;
     size: 60%;
     font-size: 20px;
@@ -203,7 +208,7 @@ main {
 }
 @media (min-width: 490px) {
     .info-box {
-        height: 1100px;
+        height: 850px;
         display: grid;
         grid-template-columns: 1fr 1fr;
 }
@@ -255,9 +260,9 @@ h2 {
     font-weight: 700;
 }
 
-container-products
+/*container-products
 
-/* .d-block w-100 {
+ .d-block w-100 {
     width: 10%;
 } */
 
@@ -329,14 +334,29 @@ container-products
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    background-color: transparent;
+    height: 700px;
+}    
+
+/*@media (min-width: 490px) {
+    background-image: url(../img/right.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     height: 800px;
     display: grid;
     grid-template-rows: c;
+}*/
+.container-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    
 }
-
 .delivery img {
     display: block;
-    width: 70%;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
     padding: 20px;
 }
@@ -346,7 +366,9 @@ container-products
     grid-template-columns: 50% 50%;
     justify-content: center;
 }
-
+/*@media (min-width: 490px) {
+    
+*/
 footer {
     background-image: url(../img/big-main.jpg);
     filter: brightness(50%);
@@ -410,6 +432,9 @@ footer ul {
         grid-template-columns: 40% 60%;
     }
     .header_burger {
+        display: none;
+    }
+    .js_menu {
         display: none;
     }
 
