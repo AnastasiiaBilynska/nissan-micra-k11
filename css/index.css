@@ -199,10 +199,13 @@ ol {
     }
     .header-menu {
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 30% 70%;
     }
     .header_burger {
         display: none;
+    }
+    .header_nav {
+        display: grid;
     }
     .js_menu {
         display: none;
