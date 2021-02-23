@@ -100,7 +100,7 @@ img {
 .main-header p {
     font-family: "Hind Vadodara,sans-serif;";
     font-weight: 400;
-    line-height: 1,5;
+    line-height: 1;
     font-size: 22px;
     font-style: inherit;
 }
@@ -214,7 +214,7 @@ ol {
         font-size: 80px;
         height: 250px;
     }
-    .container-header {
+       .container-header {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -264,7 +264,6 @@ main {
     justify-content: center;*/
     height: 1200px;
     padding: 20px;
-    size: 60%;
     font-size: 20px;
 }
 
@@ -304,7 +303,6 @@ main {
     flex-wrap: wrap; */
     height: 500px;
     padding: 20px;
-    size: 60%;
     font-size: 20px;
 }
 /*.info1,
@@ -373,12 +371,12 @@ h2 {
      margin-left: 100px;
     }
    
-    
+
     .carousel {
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
-    transform: translateX();
+    transform: translateX(200px);
     border-radius: 15px;
     border: 1px solid;
     width: 9999px;
@@ -424,6 +422,22 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
 }    
+@media (min-width: 768px) {
+    .container_contact-us {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        min-height: 1000px;
+    }
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        padding-top: 200px;
+    }
+    #contact-us {
+        font-size: 30px;
+    }
+}
 .consult-form {
     display: grid;
     grid-column: auto;
@@ -462,24 +476,6 @@ h2 {
     position:relative;
     top:1px;
 }
-
-/*@media (min-width: 490px) {
-    background-image: url(../img/right.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: 800px;
-    display: grid;
-    grid-template-rows: c;
-}*/
-
-/* media
-.container-footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-left: 20px;
-    
-} */
 .delivery img {
     display: block;
     width: 100%;
@@ -488,7 +484,6 @@ h2 {
     padding: 20px;
     border-radius: 50px;
 }
-
 .delivery {
     display: grid;
     justify-content: center;
@@ -499,13 +494,18 @@ font-size: 20px;
 text-indent: 1em;
 color: rgb(41, 86, 182);
 }
-/*@media (min-width: 490px) {
+@media (min-width: 768px) {
   .delivery {
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: center;
-}  
-*/
+    align-items: center;
+    min-height: 800px;
+    }  
+    #delivery {
+   font-size: 30px;   
+    }
+}
 footer {
     background-image: url(../img/big-main.jpg);
     filter: brightness(50%);
@@ -514,7 +514,6 @@ footer {
     background-size: cover;
     min-height: 600px;
 }
-
 .form-contacts {
     display: grid;
     padding: 20px;
@@ -577,14 +576,35 @@ footer {
     font-weight: 400;
     padding: 10px;
 }
-
 table th {
     height: 50px; vertical-align: top;
-    text-indent: 1em;
+    padding-left: 10px;
     font-weight: 400;
 }
 .map {
     padding-top: 50px;
+}
+@media (min-width: 768px) {
+    #contacts {
+        font-size: 30px;
+    }
+    .form-contacts {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        align-items: center;
+        min-height: 700px;
+    }
+    .form {
+        display: flex;
+flex: 1;
+justify-content: center;
+padding-top: 100px;
+padding-bottom: 100px;
+}
+
+   .map {
+       padding-left: 100px;
+   }
 }
 footer ul {
     display: flex;
@@ -593,6 +613,17 @@ footer ul {
     list-style-type: none;
     padding-left: 100px;
     font-size: 30px;
+}
+@media (min-width: 768px) {
+    footer ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 200px;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-between;    
+   } 
 }
 .decoration2 {
     background: rgba(0, 0, 0, 0.14);
@@ -607,11 +638,3 @@ footer ul {
     justify-content: space-around;
     font-size: 30px;
 }
-
-
-
-    /*.header-menu {
-        display: grid;
-        grid-template-columns: 2fr 1fr 6fr;
-        margin-top: 30px;
-    }*/
