@@ -6,7 +6,6 @@ function updateClock() {
 
 document.querySelector(".header_burger").addEventListener("click", function(e) {
   e.preventDefault();
- // this.classList.toggle("is-active");
  if(this.classList.contains("is-active")) {
   this.classList.remove("is-active");
   document.querySelector(".js_menu").classList.remove("active");
@@ -16,6 +15,7 @@ document.querySelector(".header_burger").addEventListener("click", function(e) {
    document.querySelector(".js_menu").classList.add("active");
  }
 })
+
 
 
 /*function openBurger() {

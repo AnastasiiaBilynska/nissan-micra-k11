@@ -222,7 +222,6 @@ background: none;
 	height: 270px;
 background-color: rgba(31, 31, 32, 0.79);
 transition: all ease 1s;
-x-index: 9999;
 position: absolute;
 padding: 90px;
 }
@@ -398,6 +397,10 @@ h2 {
 	padding-top: 50px;
 	padding-bottom: 30px;
 }
+#products {
+	padding-top: 50px;
+	margin-top: 5px;
+}
 
 .galery {
 	overflow: hidden;
@@ -499,8 +502,9 @@ h2 {
 	border: 1px solid white;
 	border-radius: 15px;
 	min-height: 50px;
+	min-width: 50px;
 	font-style: italic;
-	font-size: 20px;
+	font-size: 16px;
 	text-indent: 1em;
 	font-weight: 600;
 }
@@ -512,7 +516,7 @@ h2 {
 	border: 1px solid rgb(15, 91, 206);
 	border-radius: 15px;
 	min-height: 50px;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 500;
 	text-transform: uppercase;
 }
@@ -526,7 +530,15 @@ h2 {
 	position: relative;
 	top: 1px;
 }
-
+@media (min-width:768px) {
+	.consult-input {
+		font-size: 20px;
+	}
+	
+	.consult-submit {
+		font-size: 20px;
+	}
+}
 .delivery img {
 	display: block;
 	width: 100%;
@@ -573,11 +585,13 @@ footer {
 .form-contacts {
 	display: grid;
 	padding: 20px;
+	margin: 0;
 }
 
 .form {
-	display: block;
-	padding: 50px;
+	display: grid;
+	justify-content: center;
+	padding: 10px;
 	background-color: rgba(0, 0, 0, 0.349);
 	border-radius: 50px;
 }
@@ -585,16 +599,16 @@ footer {
 .form-input {
 	background-color: rgba(0, 0, 0, 0.349);
 	border-radius: 20px;
-	padding: 10px;
+	padding: 15px;
 	margin: 5px;
 	border: 1px solid white;
-	border-radius: 15px;
-	min-height: 60px;
+	min-height: 30px;
 	font-style: italic;
-	font-size: 15px;
+	font-size: 14px;
 	text-indent: 1em;
 	font-weight: 600;
-	color: var(--accent-color)
+	color: var(--accent-color);
+	min-width: 208px;
 }
 
 .message {
@@ -608,11 +622,11 @@ footer {
 	background-color: rgb(15, 91, 206);
 	border: 1px solid rgb(15, 91, 206);
 	border-radius: 15px;
-	min-height: 50px;
-	font-size: 20px;
+	min-height: 30px;
+	font-size: 14px;
 	font-weight: 500;
 	text-transform: uppercase;
-	min-width: 200px;
+	min-width: 208px;
 }
 
 .form-submit:hover {
@@ -624,27 +638,62 @@ footer {
 	position: relative;
 	top: 1px;
 }
+@media (min-width: 470px) {
+	.form {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.form-input {
+		min-width: 400px;
+		min-height: 50px;
+	}
+	
+	.message {
+		min-height: 150px;
+	}
+	
+	.form-submit {
+		min-width: 400px;
+		min-height: 50px;
+	}
+}
+@media (min-width: 680px) {
+	.form {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.form-input {
+		min-width: 600px;
+	}
+	
+	.form-submit {
+		min-width: 600px;
+	}
+}
 
 .contacts {
 	display: block;
 	min-height: 400px;
-	font-size: 20px;
+	font-size: 16px;
 	text-indent: 1em;
 	padding-top: 50px;
 }
+.p_contacts  {
+	font-size: 16px;
+	padding-right: 5px;
+}         
 
 .text-contacts {
 	font-weight: 400;
 	line-height: 40px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-weight: 400;
-	padding: 10px;
+	padding: 5px;
 }
 
 table th {
 	height: 50px;
 	vertical-align: top;
-	padding-left: 10px;
+	padding-left: 5px;
 	font-weight: 400;
 }
 
@@ -659,12 +708,26 @@ table th {
 		min-height: 700px;
 	}
 	.form {
-		display: flex;
-		flex: 1;
-		justify-content: center;
 		padding-top: 100px;
 		padding-bottom: 100px;
+		margin-right: 20px;
 	}
+	.form-input {
+	min-height: 40px;
+	font-size: 18px;
+	font-weight: 400;
+	min-width: 200px;
+}
+
+.form-submit {
+	min-height: 50px;
+	font-size: 20px;
+	font-weight: 400;
+	min-width: 200px;
+}
+.message {
+	min-height: 150px;
+}
 }
 
 .map {
@@ -680,7 +743,6 @@ table th {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	padding: 15px;
 }
 
 footer ul {
@@ -688,7 +750,7 @@ footer ul {
 	flex-direction: column;
 	justify-content: center;
 	list-style-type: none;
-	padding-left: 100px;
+	padding-left: 60px;
 	font-size: 30px;
 }
 
@@ -716,5 +778,6 @@ footer ul {
 	display: flex;
 	flex: 1;
 	justify-content: space-around;
-	font-size: 30px;
+	font-size: 20px;
+	padding: 5px;
 }
