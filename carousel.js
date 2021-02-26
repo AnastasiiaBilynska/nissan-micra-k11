@@ -1,5 +1,5 @@
 
-class Carousel {
+/* class Carousel {
     constructor(slides) {
         this.slides = slides;
         this.currIdx = 0;
@@ -61,3 +61,4 @@ Carousel.prototype.move = function() {
 
     new Carousel();
 }
+

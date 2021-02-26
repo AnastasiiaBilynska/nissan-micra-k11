@@ -340,7 +340,7 @@ main {
 	height: 1200px;
 	padding: 20px;
 	font-size: 20px;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 .info1,
@@ -358,7 +358,7 @@ main {
 
 @media (min-width: 490px) {
 	.info-box {
-		height: 850px;
+		max-height: 1000px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
@@ -368,7 +368,7 @@ main {
 	.info-box {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		min-height: 600px;
+		max-height: 780px;
 	}
 	#about {
 		font-size: 35px;
@@ -388,6 +388,21 @@ main {
 	border-radius: 10px;
 }
 
+#carousel {
+	max-height: 800px;
+	max-width: 100%;
+	border: rgba(0, 0, 0, 0.14) 1px solid;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px;
+	display: flex;
+	flex: 1;
+}
+#carousel img {
+	display: block;
+	max-width: 100%
+}
+
 h2 {
 	display: flex;
 	justify-content: center;
@@ -397,7 +412,7 @@ h2 {
 	padding-top: 50px;
 	padding-bottom: 30px;
 }
-#products {
+/* #products {
 	padding-top: 50px;
 	margin-top: 5px;
 }
@@ -445,7 +460,7 @@ h2 {
 	line-height: 24px;
 	display: block;
 }
-
+*/
 @media (min-width: 990px) {}
 
 .container_contact-us {

@@ -2,7 +2,7 @@ body {
     background-color: black;
 }
 
-#carousel {
+#item-products {
     display: grid;
     grid-template-columns: 5% 90% 5%;
     align-items: center;
@@ -18,7 +18,7 @@ margin-right: 10px;
 overflow: hidden;
 
 }
-.carousel {  
+.container-products {  
     display: inline-block;
     position: relative;
     display: flex;
