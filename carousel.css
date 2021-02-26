@@ -9,7 +9,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     height: 500px;
-
+margin-right: 10px;
 }
 
 .galery {
@@ -23,7 +23,9 @@ overflow: hidden;
     position: relative;
     display: flex;
 	justify-content: flex-start;
-    margin-left: -900px; 
+    margin-left: -900px;
+    margin-right: -250px; 
+    transition: margin-left 300ms;
     
 }
 
@@ -56,6 +58,7 @@ transition: ease;
     position: relative;
     width: 100%;
 }
+
 .btn-buy {
 max-width: 100px;
 padding-left: 5px;
