@@ -97,7 +97,7 @@ Carousel.prototype.move = function() {
  let list = document.querySelector('.container-products');
  let listElems = document.querySelectorAll('.slide');
 
- let position = -900; // положение ленты прокрутки
+ let position = 1; // положение ленты прокрутки
 
  document.querySelector('.prev').onclick = function() {
    // сдвиг влево

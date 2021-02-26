@@ -368,7 +368,7 @@ main {
 	.info-box {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		max-height: 780px;
+		m-height: 600px;
 	}
 	#about {
 		font-size: 35px;
