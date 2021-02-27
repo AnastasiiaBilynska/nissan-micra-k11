@@ -34,7 +34,7 @@
  this.showCurrentSlides();
     }
 }
-/* 
+
 const carousel = new Carousel (document.querySelectorAll(".slide"));  
 
 class Carousel {
@@ -61,58 +61,61 @@ Carousel.prototype.move = function() {
 
     new Carousel();
 }
+*/
+/*
+const line = document.querySelector(".line");
+const galary = document.querySelector(".galary");
+const slides = document.querySelectorAll(".slide");
+let sliderWidth = document.querySelector(".container-products").offsetWidth;
 
- 
- /*   document.querySelector(".prev").addEventListener("click",
-       () => this.prevSlides() );
-       document.querySelector(".next").addEventListener("click",
+let widthArray = [0];
+let lineWidth = 0;
+let offset = 0;
+const step = 0;
+
+
+for(let i = 0; i < slides.length; i++) {
+    widthArray.push(slides[i].offsetWidth);
+lineWidth += slides[i].offsetWidth;
+}
+line.style.width = lineWidth + "px";
+
+   document.onclick = function() {
+       offset = offset + widthArray[step];
+       line.style.margine-left = +offset + "px";
+       step++
+   }
+
+   */
+
+
+ class Carousel {
+    constructor(slides) {
+        this.slides = document.querySelectorAll(".slide");
+        this.currIdx = 0;
+        this.showCurrentSlides();
+        this.line = document.querySelector(".line");
+        this.galary = document.querySelector(".galary");
+        this.btnNext = document.querySelector(".next");
+        this.btnPrev = document.querySelector(".prev");
+    
+};
+
+
+/*btnPrev.addEventListener("click", () => this.prevSlides() );
+       document.querySelector("next").addEventListener("click",
        () => this.nextSlides() );
-       setInterval(() => this.nextSlides(), 5000);
-    }
+       setInterval(() => this.nextSlides(), 5000);*/
+    
     showCurrentSlides() {
-        document.querySelector(".container-products").src = this.slides[this.currIdx];
+        document.querySelector(".slide").url= this.slides[this.currIdx];
     }
     nextSlides() {
- if (++this.currIdx >= this.slides.length) this.currIdx = 0;
+ if (++this.currIdx >= this.slides,length) this.currIdx = 0;
  this.showCurrentSlides();
     }
     prevSlides() {
         if (--this.currIdx <0) this.currIdx = this.slides.length - 1;
  this.showCurrentSlides();
     }
-
-
- /* этот код помечает картинки, для удобства разработки */
- let i = 0;
- for(let li of document.querySelectorAll('.slide')) {
-   li.style.position = 'relative';
-   li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
-   i++;
- }
-
- /* конфигурация */
- let width = 200; // ширина картинки
- let count = 1; // видимое количество изображений
-
- let list = document.querySelector('.container-products');
- let listElems = document.querySelectorAll('.slide');
-
- let position = 1; // положение ленты прокрутки
-
- document.querySelector('.prev').onclick = function() {
-   // сдвиг влево
-   position += width * count;
-   // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-   position = Math.min(position, 0)
-   list.style.marginLeft = position + 'px';
- };
-
- document.querySelector('.next').onclick = function() {
-   // сдвиг вправо
-   position -= width * count;
-   // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-   position = Math.max(position, -width * (listElems.length - count));
-   list.style.marginLeft = position + 'px';
- };
-
-
+}
