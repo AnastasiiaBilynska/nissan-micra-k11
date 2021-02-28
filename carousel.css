@@ -1,33 +1,45 @@
+ body {
+    background-color: black;
+}
 
-#item-products {
+.products {
     display: grid;
+    grid-template-columns: 5% 90% 5%;
     align-items: center;
-    justify-items: center;
     padding-left: 10px;
     padding-right: 10px;
     height: 500px;
+
 }
 
+.galery {
+margin-left: 10px;
+margin-right: 10px;
+overflow: hidden;
 
-@media (min-width: 520px) {
-    .container-products  {  
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 }
-@media (min-width: 720px) {
-    .container-products  {  
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-@media (min-width: 1100px) {
-    .container-products  {  
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+.carousel {  
+    display: inline-block;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+   /* margin-left: -900px; */
+    
 }
 
+.prev {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    size: 20px;
+    font-size: 30px;
+    color: ivory;
+    cursor: pointer;
+    position: absolute;
+
+}
+.prev:hover {
+    opacity: 0.5;
+}
 .slide {
 display: grid;
 justify-content: center;
@@ -36,12 +48,13 @@ border-radius: 50px;
 margin: 10px;
 color: white;
 background-color: rgba(20, 20, 20, 0.342);
-max-width: 260px;
+transition: margin-left 250ms;
+transition: ease;
 }
 
 .slide img {
     position: relative;
-    width: 90%;
+    width: 100%;
 }
 .btn-buy {
 max-width: 100px;
@@ -60,4 +73,17 @@ cursor: pointer;
     background: linear-gradient(to bottom, #33b3ca 5%, #a4cbcc 100%);
     background-color: #ffffff;
     border: oldlace;
+}
+.next {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    size: 20px;
+    font-size: 30px;
+    color: ivory;
+    cursor: pointer;
+    position: absolute;
+    
+}
+.next:hover {
+    opacity: 0.5;
 }

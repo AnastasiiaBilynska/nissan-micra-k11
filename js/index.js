@@ -4,17 +4,18 @@ function updateClock() {
   clock.innerText = new Date().toLocaleTimeString();
 }
 
-document.querySelector(".header_burger").addEventListener("click", function(e) {
-  e.preventDefault();
- if(this.classList.contains("is-active")) {
-  this.classList.remove("is-active");
-  document.querySelector(".js_menu").classList.remove("active");
- }
- else {
-   this.classList.add("is-active");
-   document.querySelector(".js_menu").classList.add("active");
- }
-})
+document
+  .querySelector(".header_burger")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    if (this.classList.contains("is-active")) {
+      this.classList.remove("is-active");
+      document.querySelector(".js_menu").classList.remove("active");
+    } else {
+      this.classList.add("is-active");
+      document.querySelector(".js_menu").classList.add("active");
+    }
+  });
 
-
+  
 

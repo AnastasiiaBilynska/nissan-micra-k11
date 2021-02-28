@@ -1,0 +1,44 @@
+[
+    {
+        "id": "nm01",
+        "title": "Панель",
+        "image": "logo.png",
+        "price": 100,
+        "count": 2
+    },
+    {
+        "id": "nm02",
+        "title": "Обшивка салону",
+        "image": "logo.png",
+        "price": 120,
+        "count": 4
+    },
+    {
+        "id": "nm03",
+        "title": "Кермо",
+        "image": "logo.png",
+        "price": 20,
+        "count": 3
+    },
+    {
+        "id": "nm04",
+        "title": "Сидіння заднє",
+        "image": "logo.png",
+        "price": 50,
+        "count": 3
+    },
+    {
+        "id": "nm05",
+        "title": "Скло лобове",
+        "image": "logo.png",
+        "price": 200,
+        "count": 2
+    }
+    {
+        "id": "nm06",
+        "title": "Бампер пердній",
+        "image": "logo.png",
+        "price": 40,
+        "count": 1
+    }
+]

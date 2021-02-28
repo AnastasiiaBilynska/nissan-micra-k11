@@ -62,8 +62,8 @@ Carousel.prototype.move = function() {
     new Carousel();
 }
 */
-/*
-const line = document.querySelector(".line");
+
+const line = document.querySelector(".carousel");
 const galary = document.querySelector(".galary");
 const slides = document.querySelectorAll(".slide");
 let sliderWidth = document.querySelector(".container-products").offsetWidth;
@@ -82,11 +82,11 @@ line.style.width = lineWidth + "px";
 
    document.onclick = function() {
        offset = offset + widthArray[step];
-       line.style.margine-left = +offset + "px";
+       line.style.left = +offset + "px";
        step++
    }
 
-   */
+   
 
 
  class Carousel {
@@ -105,7 +105,7 @@ line.style.width = lineWidth + "px";
 /*btnPrev.addEventListener("click", () => this.prevSlides() );
        document.querySelector("next").addEventListener("click",
        () => this.nextSlides() );
-       setInterval(() => this.nextSlides(), 5000);*/
+       setInterval(() => this.nextSlides(), 5000);
     
     showCurrentSlides() {
         document.querySelector(".slide").url= this.slides[this.currIdx];
@@ -119,3 +119,4 @@ line.style.width = lineWidth + "px";
  this.showCurrentSlides();
     }
 }
+*/
