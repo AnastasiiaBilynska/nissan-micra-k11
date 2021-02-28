@@ -211,7 +211,31 @@
                   <button class="consult-submit" type="submit">надіслати</button>
                </form>
             </div>
-            <div class="empty-conteiner"></div>
+            <div class="exchange-conteiner">
+               <div class="container-ex">
+                  <h2>Курс валют</h2>
+                  <div class="currency">
+                     <select id="currency-one">
+                        <option value="EUR">EUR</option>
+                        <option value="UAH">UAH</option>
+                        <option value="USD" selected>USD</option>
+                     </select>
+                     <input type="number" id="amount-one" placeholder="0" value="1" />
+                  </div>
+                  <div class="swap-rate-container">
+                     <button class="btn" id="swap">Навпаки</button>
+                  </div>
+                  <div class="currency">
+                     <select id="currency-two">
+                        <option value="EUR" selected>EUR</option>
+                        <option value="UAH">UAH</option>
+                        <option value="USD">USD</option>
+                     </select>
+                     <input type="number" id="amount-two" placeholder="0" />
+                  </div>
+                  <div class="rate" id="rate"></div>
+               </div>
+            </div>
          </div>
          <div class="container-footer">
             <div class="delivery">
@@ -239,7 +263,7 @@
                <form action="https://formspree.io/f/mgepqzvy" method="POST">
                   <label><input class="form-input" type="text" placeholder="Ваше ім'я"></label>
                   <br>
-                  <label><input class="form-input" type="text" placeholder="Номер телефону"></label>
+                  <label><input class="form-input" type="number" placeholder="Номер телефону"></label>
                   <br>
                   <label><input class="form-input" type="text" placeholder="E-mail"></label>
                   <br>
